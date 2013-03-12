@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 1, ../sass/_haraldson.sass */
 body {
-  font: normal normal 12px/1 "Helvetica Neue", "Lucida Grande", Arial, FreeSans, sans-serif;
+  font: normal normal 15px/1 "Helvetica Neue", "Lucida Grande", Arial, FreeSans, sans-serif;
   color: #222222;
   text-decoration: none;
   text-transform: none;
@@ -81,9 +81,9 @@ body {
   height: auto;
   margin: 50px auto;
 }
-/* line 8, ../sass/_haraldson.sass */
+/* line 9, ../sass/_haraldson.sass */
 #container h1 {
-  font: normal 900 30px/1 "Helvetica Neue", "Lucida Grande", Arial, FreeSans, sans-serif;
+  font: normal 900 33px/1 "Helvetica Neue", "Lucida Grande", Arial, FreeSans, sans-serif;
   color: #222222;
   text-decoration: none;
   text-transform: none;
@@ -92,8 +92,9 @@ body {
   right: auto;
   bottom: auto;
   left: auto;
+  margin-bottom: 18px;
 }
-/* line 12, ../sass/_haraldson.sass */
+/* line 14, ../sass/_haraldson.sass */
 #container h1:before {
   content: "";
   position: absolute;
@@ -110,15 +111,104 @@ body {
   display: block;
   margin: -9px 0 0;
 }
-/* line 22, ../sass/_haraldson.sass */
+/* line 24, ../sass/_haraldson.sass */
 #container h2 {
-  font: normal normal 21px/1.5 "Helvetica Neue", "Lucida Grande", Arial, FreeSans, sans-serif;
+  font: normal normal 24px/1.5 "Helvetica Neue", "Lucida Grande", Arial, FreeSans, sans-serif;
   color: #444444;
   text-decoration: none;
   text-transform: none;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
-/* line 26, ../sass/_haraldson.sass */
-#container p {
+/* line 28, ../sass/_haraldson.sass */
+#container p,
+#container ul,
+#container ol,
+#container dl {
   line-height: 1.5;
+  margin-bottom: 25px;
+}
+/* line 35, ../sass/_haraldson.sass */
+#container ul {
+  list-style: none;
+}
+/* line 38, ../sass/_haraldson.sass */
+#container ul > li {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+/* line 41, ../sass/_haraldson.sass */
+#container ul > li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: -15px;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #bbbbbb;
+  display: block;
+  margin: -3px 0 0;
+}
+/* line 51, ../sass/_haraldson.sass */
+#container blockquote {
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-bottom: 5px solid #eeeeee;
+  position: relative;
+  top: auto;
+  right: -20px;
+  bottom: auto;
+  left: -20px;
+  margin: 35px 0 35px;
+}
+/* line 59, ../sass/_haraldson.sass */
+#container blockquote p {
+  font: normal 500 18px/1.4 "Helvetica Neue", "Lucida Grande", Arial, FreeSans, sans-serif;
+  color: #666666;
+  text-decoration: none;
+  text-transform: none;
+  margin-bottom: 18px;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+/* line 64, ../sass/_haraldson.sass */
+#container blockquote p:before {
+  content: "“";
+  display: inline-block;
+  height: 50px;
+  float: left;
+  font: normal 900 120px/1 "Helvetica Neue", "Lucida Grande", Arial, FreeSans, sans-serif;
+  color: #dddddd;
+  text-decoration: none;
+  text-transform: none;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  margin: -14px 20px 10px 0;
+}
+/* line 73, ../sass/_haraldson.sass */
+#container blockquote cite {
+  display: block;
+  font: italic normal 13px/1 "Helvetica Neue", "Lucida Grande", Arial, FreeSans, sans-serif;
+  color: #aaaaaa;
+  text-decoration: none;
+  text-transform: none;
+}
+/* line 77, ../sass/_haraldson.sass */
+#container blockquote cite:before {
+  content: "— ";
 }

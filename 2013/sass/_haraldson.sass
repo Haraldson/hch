@@ -1,13 +1,15 @@
 body
-    +text(12px, 1, $fontsans, $colortextdefault)
+    +text(15px, 1, $fontsans, $colortextdefault)
 
 #container
-    +size(600px)
+    $containerwidth: 600px
+    +size($containerwidth)
     margin: 50px auto
     
     h1
-        +text(30px, 1, $fontsans, $colortextdefault, normal, 900)
+        +text(33px, 1, $fontsans, $colortextdefault, normal, 900)
         +pos(relative)
+        margin-bottom: 18px
         
         &:before
             $size: 18px
@@ -20,8 +22,57 @@ body
             margin: -($size/2) 0 0
     
     h2
-        +text(21px, 1.5, $fontsans, #444)
-        margin-bottom: 6px
+        +text(24px, 1.5, $fontsans, #444)
+        margin-bottom: 3px
     
-    p
+    p,
+    ul,
+    ol,
+    dl
         line-height: 1.5
+        margin-bottom: 25px
+    
+    ul
+        list-style: none
+        
+        > li
+            +pos(relative)
+            
+            &:before
+                $size: 6px
+                content: ""
+                +pos(absolute, 50%, -15px)
+                +size($size, $size)
+                +borad($size)
+                background: #bbb
+                display: block
+                margin: -($size/2) 0 0
+    
+    blockquote
+        +size($containerwidth)
+        padding: 20px
+        background: #f8f8f8
+        border-bottom: 5px solid #eee
+        +pos(relative, auto, -20px, auto, -20px)
+        margin: 35px 0 35px
+        
+        p
+            +text(18px, 1.4, $fontsans, #666, normal, 500)
+            margin-bottom: 18px
+            +pos(relative)
+            
+            &:before
+                content: "“"
+                display: inline-block
+                height: 50px
+                float: left
+                +text(120px, 1, $fontsans, #ddd, normal, 900)
+                +pos(relative)
+                margin: -14px 20px 10px 0
+        
+        cite
+            display: block
+            +text(13px, 1, $fontsans, #aaa, italic)
+            
+            &:before
+                content: "— "

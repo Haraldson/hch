@@ -19,6 +19,18 @@
             <h1>Some title</h1>
             <h2>Some caption</h2>
             <p>Some lorem ipsum dolor sit amet</p>
+            <blockquote>
+                <p>Disse Compass-greiene er ganske nifty, asså! Variabler og greier, ho ho ho ho!</p>
+                <cite>Hein Haraldson Berg</cite>
+            </blockquote>
+            <p>Pellentesque dignissim nunc non libero faucibus auctor. Aliquam feugiat, ante in mollis interdum, arcu turpis convallis mi, ac hendrerit orci nulla in tortor.</p>
+            <p>Nam nunc nisi, fringilla id vulputate et, aliquam et felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc venenatis elementum felis, at sagittis purus egestas at. Pellentesque dapibus lacinia convallis. In vitae purus est.</p>
+            <p>In vitae massa at lacus sagittis suscipit eget blandit tortor. Suspendisse in tincidunt nulla. Proin diam neque, consectetur quis bibendum vel, iaculis in purus. Curabitur eget neque enim, eu condimentum velit.</p>
+            <ul>
+                <li>In vitae massa at lacus sagittis suscipit</li>
+                <li>Eget blandit tortor</li>
+                <li>Suspendisse in tincidunt nulla, proin diam neque</li>
+            </ul>
         </div>
         <script src="js/fn.js"></script>
     </body>
