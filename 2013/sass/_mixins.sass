@@ -1,0 +1,21 @@
+=text($fontsize: 12px, $lineheight: 1.5, $fontfamily: sans-serif, $color: #000, $fontstyle: normal, $fontweight: normal, $textdecoration: none, $texttransform: none)
+    font: $fontstyle $fontweight #{$fontsize}/#{$lineheight} $fontfamily
+    color: $color
+    text-decoration: $textdecoration
+    text-transform: $texttransform
+
+=pos($position: static, $top: auto, $left: auto, $bottom: auto, $right: auto)
+    position: $position
+    top: $top
+    right: $right
+    bottom: $bottom
+    left: $left
+
+=size($width: auto, $height: auto)
+    width: $width
+    height: $height
+
+=borad($radius: 0)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius

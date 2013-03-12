@@ -1,0 +1,27 @@
+body
+    +text(12px, 1, $fontsans, $colortextdefault)
+
+#container
+    +size(600px)
+    margin: 50px auto
+    
+    h1
+        +text(30px, 1, $fontsans, $colortextdefault, normal, 900)
+        +pos(relative)
+        
+        &:before
+            $size: 18px
+            content: ""
+            +pos(absolute, 50%, -30px)
+            +size($size, $size)
+            +borad($size)
+            background: #ddd
+            display: block
+            margin: -($size/2) 0 0
+    
+    h2
+        +text(21px, 1.5, $fontsans, #444)
+        margin-bottom: 6px
+    
+    p
+        line-height: 1.5
